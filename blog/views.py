@@ -25,3 +25,7 @@ def post_new(request):
     else:
         form = PostForm()
     return render( request, 'blog/post_edit.html', {'form': form} )   
+
+def test(request):
+    text = "Tova e proba"
+    return render(request,'blog/test.html',{ 'text' : text} )
